@@ -1,0 +1,16 @@
+server:
+  port: 8888
+  address: localhost
+
+spring:
+  profiles:
+    active: config
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chuchip/servercloudconfig.git
+
+
